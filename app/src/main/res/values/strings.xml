@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Android Certification Playground</string>
+    <string name="show_short_toast">Short Toast</string>
+    <string name="show_long_toast">Long Toast</string>
+    <string name="show_toast_gravity_left">Toast Gravity Left</string>
+    <string name="show_toast_gravity_top">Toast Gravity Top</string>
+    <string name="show_toast_gravity_right">Toast Gravity Right</string>
+    <string name="show_customized_toast_success">Customized Toast Success</string>
+    <string name="show_customized_toast_error">Customized Toast Error</string>
+    <string name="dummy_content_description">Content Description</string>
+    <string name="custom_toast_text">This is a custom toast</string>
 </resources>
