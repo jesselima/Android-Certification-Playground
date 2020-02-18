@@ -2,4 +2,4 @@
 Feet on the ground. Hands on the code.
 
 Labels:
-ongoing ⏩         review 🔁         done ✅          stopped ❌         warning❗        questions❓
+ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗----- questions❓
