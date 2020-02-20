@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Android Certification Playground</string>
+    <string name="show_snackbar">Show SnackBar</string>
+    <string name="show_snackbar_with_action">Show SnackBar With Action</string>
+    <string name="show_snackbar_with_callback">Show SnackBar With Callback</string>
 </resources>
