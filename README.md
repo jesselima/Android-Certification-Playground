@@ -8,9 +8,9 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 
 ✅   [Toasts](https://developer.android.com/guide/topics/ui/notifiers/toasts) 
 
-⏩   [Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar)
+✅   [Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar)
 
-Localize your app
+⏩   [Localize your app](https://developer.android.com/guide/topics/resources/localization)
 
 Application fundamentals
 
