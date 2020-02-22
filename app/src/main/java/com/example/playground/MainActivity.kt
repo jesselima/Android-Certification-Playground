@@ -10,8 +10,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val snackBarCallback = Snackbar.Callback()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         buttonShowSnackbarWithAction.setOnClickListener {
             showMySnackBarWithAction()
+        }
+
+        buttonShowSnackbarWithLambda.setOnClickListener {
+            showMySnackBarWithActionWithLambda()
         }
 
         buttonShowSnackbarWithCallback.setOnClickListener {
@@ -42,6 +44,19 @@ class MainActivity : AppCompatActivity() {
         .setAction("Action", MySnackbarListener())
         .show()
     }
+
+    private fun showMySnackBarWithActionWithLambda() {
+        Snackbar.make(
+            main_layout,
+            "Hello!",
+            Snackbar.LENGTH_LONG
+        )
+        .setAction("ClickMeAction") {
+            Toast.makeText(applicationContext, "Clicked Toast Action", Toast.LENGTH_LONG).show()
+        }
+        .show()
+    }
+
 
     private fun showMySnackBarWithCallback() {
         Snackbar.make(findViewById(R.id.main_layout), "Hi snackbar!", Snackbar.LENGTH_LONG)

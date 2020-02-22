@@ -22,6 +22,14 @@
         android:text="@string/show_snackbar_with_action"
         />
 
+
+    <Button
+        android:id="@+id/buttonShowSnackbarWithLambda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_snackbar_with_lambda"
+        />
+
     <Button
         android:id="@+id/buttonShowSnackbarWithCallback"
         android:layout_width="wrap_content"
