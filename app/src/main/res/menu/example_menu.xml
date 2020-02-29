@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- https://developer.android.com/guide/topics/resources/menu-resource -->
+<!-- SAMPLE WITH DOCS
+
+    *** ATTENTION FOR OBFUSCATION WARNINGS IN DOCUMENTATION ***
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@[+][package:]id/resource_name"
+          android:title="string"
+          android:titleCondensed="string"
+          android:icon="@[package:]drawable/drawable_resource_name"
+          android:onClick="method name"
+
+          android:showAsAction=["ifRoom" | "never" | "withText" | "always" | "collapseActionView"]
+
+                ifRoom
+                    Only place this item in the app bar if there is room for it. If there is not room for all the items marked "ifRoom", the items with the lowest orderInCategory values are displayed as actions, and the remaining items are displayed in the overflow menu.
+                withText
+                    Also include the title text (defined by android:title) with the action item. You can include this value along with one of the others as a flag set, by separating them with a pipe |.
+                never
+                    Never place this item in the app bar. Instead, list the item in the app bar's overflow menu.
+                always
+                    Always place this item in the app bar. Avoid using this unless it's critical that the item always appear in the action bar. Setting multiple items to always appear as action items can result in them overlapping with other UI in the app bar.
+                collapseActionView
+                    The action view associated with this action item (as declared by android:actionLayout or android:actionViewClass) is collapsible. Introduced in API Level 14.
+
+          android:actionLayout="@[package:]layout/layout_resource_name"
+
+                Layout resource. A layout to use as the action view. (https://developer.android.com/training/appbar/action-views)
+
+          android:actionViewClass="class name"
+          android:actionProviderClass="class name"
+          android:alphabeticShortcut="string"
+          android:alphabeticModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
+          android:numericShortcut="string"
+          android:numericModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
+          android:checkable=["true" | "false"]
+          android:visible=["true" | "false"]
+          android:enabled=["true" | "false"]
+          android:menuCategory=["container" | "system" | "secondary" | "alternative"]
+          android:orderInCategory="integer" />
+
+    <group android:id="@[+][package:]id/resource name"
+           android:checkableBehavior=["none" | "all" | "single"]
+           android:visible=["true" | "false"]
+           android:enabled=["true" | "false"]
+           android:menuCategory=["container" | "system" | "secondary" | "alternative"]
+           android:orderInCategory="integer" >
+        <item />
+    </group>
+
+    <item >
+        <menu>
+          <item />
+        </menu>
+    </item>
+
+</menu>
+
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item1"
+        android:title="Item 1"
+        android:icon="@drawable/ic_print"
+        app:showAsAction="ifRoom"/>
+
+    <group android:id="@+id/menu_group">
+        <item
+            android:id="@+id/menu_group_item_1"
+            android:title="Group Item 1"
+            android:icon="@drawable/ic_assignment"/>
+        <item
+            android:id="@+id/menu_group_item_2"
+            android:title="Group Item 2"
+            android:icon="@drawable/ic_exit_to_app"/>
+    </group>
+
+    <item
+        android:id="@+id/menu_submenu"
+        android:title="Sub Menu"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/menu_submenu_item_1"
+                android:title="Sub Menu Item"
+                android:icon="@drawable/ic_alarm"/>
+        </menu>
+
+    </item>
+
+
+</menu>

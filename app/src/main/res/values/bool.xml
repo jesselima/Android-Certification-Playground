@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="some_value_1">true</bool>
+    <bool name="some_value_2">false</bool>
+    <bool name="screen_small">true</bool>
+    <bool name="adjust_view_bounds">false</bool>
+</resources>

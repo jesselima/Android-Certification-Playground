@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  sample  -->
+    <item
+        type="id"
+        name="id_name" />
+
+    <item type="id" name="buttonOk" />
+    <item type="id" name="dialog_exit" />
+
+</resources>

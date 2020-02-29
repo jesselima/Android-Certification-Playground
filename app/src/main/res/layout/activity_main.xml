@@ -1,18 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Use of bool resource values in XML layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_margin="@dimen/margin_default"
+                android:visibility="gone"
+                android:adjustViewBounds="@bool/adjust_view_bounds"
+                />
+
+            <TextView
+                android:id="@+id/imageTitle"
+                android:text="Hello Flutter"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"
+                android:layout_height="@dimen/textview_height"
+                android:layout_width="@dimen/textview_width"
+                android:textSize="@dimen/font_size"
+                />
+
+            <Button
+                android:id="@+id/buttonLogValuesFromResource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Values From Resource"
+                />
+
+            <Button
+                android:id="@+id/buttonToastLocalJsonFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toast Local Json File"
+                />
+
+            <Button
+                android:id="@+id/buttonLoadPropertyAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Property Animation"
+                />
+
+            <Button
+                android:id="@+id/butonLoadViewAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load View Animation"
+                />
+
+            <Button
+                android:id="@+id/buttonLoadFrameAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Frame Animation"
+                />
+
+            <ImageView
+                android:id="@+id/image_view_animation_battery_filling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/battery_animated_filling"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button with State List"
+                android:textColor="@color/color_state_list_sample"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="String formated + Custom Style:"
+                />
+
+            <TextView
+                style="@style/CustomTextStyle1"
+                android:id="@+id/stringWithHtmlTags1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+            <TextView
+                style="@style/CustomTextStyle2"
+                android:id="@+id/stringWithHtmlTags2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="String with Styled spannables:"
+                />
+
+            <TextView
+                android:id="@+id/textViewStyledWithSpannables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="String with Custom Styled spannables:"
+                />
+
+            <TextView
+                android:id="@+id/textViewCustomStyledWithSpannables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <Button
+                android:id="@+id/sendSpannableString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send spannableString to Activity"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

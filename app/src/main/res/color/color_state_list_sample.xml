@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    <item
+        android:color="hex_color"
+        android:state_pressed=["true" | "false"]
+        android:state_focused=["true" | "false"]
+        android:state_selected=["true" | "false"]
+        android:state_checkable=["true" | "false"]
+        android:state_checked=["true" | "false"]
+        android:state_enabled=["true" | "false"]
+        android:state_window_focused=["true" | "false"] />
+</selector>
+
+
+============================================================
+
+<selector>
+    Required. This must be the root element. Contains one or more <item> elements.
+
+    attributes:
+
+    xmlns:android
+        String. Required. Defines the XML namespace, which must be "http://schemas.android.com/apk/res/android".
+
+<item>
+    Defines a color to use during certain states, as described by its attributes. Must be a child of a <selector> element.
+
+    attributes:
+
+    android:color
+        Hexadeximal color. Required. The color is specified with an RGB value and optional alpha channel.
+
+        The value always begins with a pound (#) character and then followed by the Alpha-Red-Green-Blue information in one of the following formats:
+
+            #RGB
+            #ARGB
+            #RRGGBB
+            #AARRGGBB
+
+    android:state_pressed
+        Boolean. "true" if this item should be used when the object is pressed (such as when a button is touched/clicked); "false" if this item should be used in the default, non-pressed state.
+
+    android:state_focused
+        Boolean. "true" if this item should be used when the object is focused (such as when a button is highlighted using the trackball/d-pad); "false" if this item should be used in the default, non-focused state.
+
+    android:state_selected
+        Boolean. "true" if this item should be used when the object is selected (such as when a tab is opened); "false" if this item should be used when the object is not selected.
+
+    android:state_checkable
+        Boolean. "true" if this item should be used when the object is checkable; "false" if this item should be used when the object is not checkable. (Only useful if the object can transition between a checkable and non-checkable widget.)
+
+    android:state_checked
+        Boolean. "true" if this item should be used when the object is checked; "false" if it should be used when the object is un-checked.
+
+    android:state_enabled
+        Boolean. "true" if this item should be used when the object is enabled (capable of receiving touch/click events); "false" if it should be used when the object is disabled.
+
+    android:state_window_focused
+        Boolean. "true" if this item should be used when the application window has focus (the application is in the foreground), "false" if this item should be used when the application window does not have focus (for example, if the notification shade is pulled down or a dialog appears).
+
+-->
+
+        <item
+            android:state_pressed="true"
+            android:color="#ffff0000"/> <!-- pressed -->
+        <item
+            android:state_focused="true"
+            android:color="#ff0000ff"/> <!-- focused -->
+        <item
+            android:color="#ff000000"/> <!-- default -->
+
+</selector>

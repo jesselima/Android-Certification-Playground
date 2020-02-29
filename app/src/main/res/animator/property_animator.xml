@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- https://developer.android.com/guide/topics/resources/animation-resource
+
+    A container that holds other animation elements (<objectAnimator>, <valueAnimator>,
+    or other <set> elements). Represents an AnimatorSet.
+-->
+
+<!--    android:ordering=["together" | "sequentially"]>  The default is "together"-->
+
+<!--    <objectAnimator-->
+<!--        android:propertyName="someName"
+-->
+
+<!--        android:duration="int"-->
+<!--        android:valueFrom="float | int | color"-->
+<!--        android:valueTo="float | int | color"-->
+<!--        android:startOffset="int"-->
+<!--        android:repeatCount="int"-->
+<!--        android:repeatMode=["repeat" | "reverse"]-->
+<!--            android:valueType=["intType" | "floatType"]/>-->
+
+<!--    <animator-->
+<!--        android:duration="int"-->
+<!--        android:valueFrom="float | int | color"-->
+<!--        android:valueTo="float | int | color"-->
+<!--        android:startOffset="int"-->
+<!--        android:repeatCount="int"-->
+<!--        android:repeatMode=["repeat" | "reverse"]-->
+<!--        android:valueType=["intType" | "floatType"]/>-->
+
+
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:propertyName="x"
+            android:duration="1000"
+            android:valueTo="400"
+            android:valueType="intType"
+        />
+        <objectAnimator
+            android:propertyName="y"
+            android:duration="400"
+            android:valueTo="100"
+            android:valueType="intType"
+        />
+    </set>
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:duration="500"
+        android:valueFrom="0f"
+        android:valueTo="1f"
+    />
+
+
+</set>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <!--
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@[package:]anim/interpolator_resource"
+        android:shareInterpolator=["true" | "false"] >
+
+        <alpha
+            android:fromAlpha="float"
+            android:toAlpha="float" />
+
+        <scale
+            android:fromXScale="float"
+            android:toXScale="float"
+            android:fromYScale="float"
+            android:toYScale="float"
+            android:pivotX="float"
+            android:pivotY="float" />
+
+        <translate
+            android:fromXDelta="float"
+            android:toXDelta="float"
+            android:fromYDelta="float"
+            android:toYDelta="float" />
+
+        <rotate
+            android:fromDegrees="float"
+            android:toDegrees="float"
+            android:pivotX="float"
+            android:pivotY="float" />
+
+        <set>
+            ...
+        </set>
+    </set>
+
+    ================================
+
+    elements:
+
+    <set>
+        A container that holds other animation elements (<alpha>, <scale>, <translate>, <rotate>) or other <set> elements. Represents an AnimationSet.
+
+        attributes:
+
+        android:interpolator
+            Interpolator resource. An Interpolator to apply on the animation. The value must be a reference to a resource that specifies an interpolator (not an interpolator class name). There are default interpolator resources available from the platform or you can create your own interpolator resource. See the discussion below for more about Interpolators.
+        android:shareInterpolator
+            Boolean. "true" if you want to share the same interpolator among all child elements.
+
+    <alpha>
+        A fade-in or fade-out animation. Represents an AlphaAnimation.
+
+        attributes:
+
+        android:fromAlpha
+            Float. Starting opacity offset, where 0.0 is transparent and 1.0 is opaque.
+        android:toAlpha
+            Float. Ending opacity offset, where 0.0 is transparent and 1.0 is opaque.
+
+        For more attributes supported by <alpha>, see the Animation class reference (of which, all XML attributes are inherrited by this element).
+
+    <scale>
+        A resizing animation. You can specify the center point of the image from which it grows outward (or inward) by specifying pivotX and pivotY. For example, if these values are 0, 0 (top-left corner), all growth will be down and to the right. Represents a ScaleAnimation.
+
+        attributes:
+
+        android:fromXScale
+            Float. Starting X size offset, where 1.0 is no change.
+        android:toXScale
+            Float. Ending X size offset, where 1.0 is no change.
+        android:fromYScale
+            Float. Starting Y size offset, where 1.0 is no change.
+        android:toYScale
+            Float. Ending Y size offset, where 1.0 is no change.
+        android:pivotX
+            Float. The X coordinate to remain fixed when the object is scaled.
+        android:pivotY
+            Float. The Y coordinate to remain fixed when the object is scaled.
+
+        For more attributes supported by <scale>, see the Animation class reference (of which, all XML attributes are inherrited by this element).
+
+    <translate>
+        A vertical and/or horizontal motion. Supports the following attributes in any of the following three formats: values from -100 to 100 ending with "%", indicating a percentage relative to itself; values from -100 to 100 ending in "%p", indicating a percentage relative to its parent; a float value with no suffix, indicating an absolute value. Represents a TranslateAnimation.
+
+        attributes:
+
+        android:fromXDelta
+            Float or percentage. Starting X offset. Expressed either: in pixels relative to the normal position (such as "5"), in percentage relative to the element width (such as "5%"), or in percentage relative to the parent width (such as "5%p").
+        android:toXDelta
+            Float or percentage. Ending X offset. Expressed either: in pixels relative to the normal position (such as "5"), in percentage relative to the element width (such as "5%"), or in percentage relative to the parent width (such as "5%p").
+        android:fromYDelta
+            Float or percentage. Starting Y offset. Expressed either: in pixels relative to the normal position (such as "5"), in percentage relative to the element height (such as "5%"), or in percentage relative to the parent height (such as "5%p").
+        android:toYDelta
+            Float or percentage. Ending Y offset. Expressed either: in pixels relative to the normal position (such as "5"), in percentage relative to the element height (such as "5%"), or in percentage relative to the parent height (such as "5%p").
+
+        For more attributes supported by <translate>, see the Animation class reference (of which, all XML attributes are inherrited by this element).
+
+    <rotate>
+        A rotation animation. Represents a RotateAnimation.
+
+        attributes:
+
+        android:fromDegrees
+            Float. Starting angular position, in degrees.
+        android:toDegrees
+            Float. Ending angular position, in degrees.
+        android:pivotX
+            Float or percentage. The X coordinate of the center of rotation. Expressed either: in pixels relative to the object's left edge (such as "5"), in percentage relative to the object's left edge (such as "5%"), or in percentage relative to the parent container's left edge (such as "5%p").
+        android:pivotY
+            Float or percentage. The Y coordinate of the center of rotation. Expressed either: in pixels relative to the object's top edge (such as "5"), in percentage relative to the object's top edge (such as "5%"), or in percentage relative to the parent container's top edge (such as "5%p").
+
+        For more attributes supported by <rotate>, see the Animation class reference (of which, all XML attributes are inherrited by this element).
+
+
+
+    -->
+
+    <scale
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="1.4"
+        android:fromYScale="1.0"
+        android:toYScale="0.6"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fillAfter="false"
+        android:duration="1000" />
+
+    <set
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:startOffset="700">
+        <scale
+            android:fromXScale="1.4"
+            android:toXScale="0.0"
+            android:fromYScale="0.6"
+            android:toYScale="0.0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:duration="400" />
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="-45"
+            android:toYScale="0.0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:duration="400" />
+    </set>
+
+
+</set>
