@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Android Certification Playground</string>
 
     <!-- TYPES:
@@ -124,5 +124,34 @@ DESCRIPTION:
     <string name="title">Best practices for <annotation font="ibm_plex_sans_bold">text</annotation> on Android</string>
 
     <string name="annotation_string_sample">Best practices for <annotation font="ibm_plex_sans_italic">text styling</annotation> on Android</string>
+
+
+
+    <!-- ###  Managing strings for localization ### -->
+    <string name="countdown">
+        <xliff:g id="time" example="5 days">%1$s</xliff:g> until holiday
+    </string>
+
+    <!-- Example placeholder for a special unicode symbol -->
+    <string name="start_ration">
+        Checkout our 5 <xliff:g id="star">\u2605</xliff:g>
+    </string>
+
+    <!-- Example placeholder for a for a URL -->
+    <string name="app_home_url">
+        Visit ut at <xliff:g id="application_home">http://my/app/home.html</xliff:g>
+    </string>
+
+    <!-- Example placeholder for a name -->
+    <string name="prod_name">
+        Learn more at <xliff:g id="prod_gamegroup">Game Group</xliff:g>
+    </string>
+
+    <!-- Example placeholder for a literal -->
+    <string name="promo_message">
+        Please use the "<xliff:g id="promotion_code">ABCDEFG</xliff:g>" to get a discount.
+    </string>
+
+
 
 </resources>

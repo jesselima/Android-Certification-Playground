@@ -16,9 +16,6 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 ⏩   [Localize your app](https://developer.android.com/guide/topics/resources/localization)
 
 
-
-
-
 **Directory and Resource Type Description**
 
 [Checkout official documentation](https://developer.android.com/guide/topics/resources/providing-resources)
@@ -74,6 +71,41 @@ Arbitrary XML files that can be read at runtime by calling **Resources.getXML()*
 
 **font/** 	
 Font files with extensions such as **.ttf, .otf, or .ttc, or XML files that include a <font-family> element**. For more information about fonts as resources, go to Fonts in XML.
+
+
+
+[Localization Checklist](https://developer.android.com/distribute/best-practices/launch/localization-checklist)
+
+
+- **Research target languages and locales** . Identify countries where there is a good market opportunity and where you can provide appropriate user support.
+    
+- **Use Google Play data to find localization opportunities**. If your app is live, use the user acquisition performance report in the Play Console to identify countries where you haven’t localized but are seeing many visits to the Play store. These visits could indicate interest in your app in that country and an opportunity to increase installs by localizing.
+    
+- **Design your app for localization** . Use a single set of flexible layouts with alternative layouts where needed. Support right-to-left text, use system-provided formats for dates, times, numbers, and currencies, and include a full set of default resources.
+    
+- **Optimize your app if you’re targeting emerging markets**. Review the Building for Billions best practices on how to optimize Android apps for low- and no-bandwidth connectivity and low-cost devices.
+    
+- **Manage your app’s UI strings** . To prepare for translation move all strings into strings.xml, follow the Material Design guidelines on writing style, provide sufficient context information for declared strings, and mark content that should not be translated.
+    
+- **Translate your app, store listing, and other resources** . Solicit translations from your users, find a translation agency yourself, or use the app translation service from the Google Play Console or Android Studio to request a reliable and efficient translation.
+    
+- **Test your localized app** . Make sure you can test on the makes and models common in the markets you’re targeting. Check the UI thoroughly for formatting and presentation issues and where possible get native speakers to review.
+
+- **Run an open test** . Plan an open test in key countries before launch to get real-world feedback from users.
+    
+- **Plan for international marketing**. Prepare to run an app install campaign and other regional or country-specific marketing from launch. Use the Google Play badge generator to build localized badges that you can use on websites or marketing materials. Generate new device art for promotional material with screenshots from your new localization.
+    
+- **Check your Optimization Tips**. Check whether you’re missing parts of your localized store listing and get other helpful reminders for a successful localized launch. Launch the Play Console.
+    
+- **Final checks and publishing** . First, go back and double check you’ve done everything in this list. Now you’re ready to launch or promote your app in your target country.
+    
+- **Support international users after launch**. At a minimum watch your ratings, reviews, and download stats carefully to find issues that could affect users. Consider creating language specific user groups or forums, if manageable.
+    
+- **Browse and reply to user reviews** . Understand what users think of your app and reply to their reviews to address any issues you might not have spotted in testing.
+    
+- **Run store listing experiments** . When visits to your store listing from your new markets start growing, run a localized store listing experiment to see what text and graphics work best. You can run up to 5 at the same time.
+
+
 
 
 ====================

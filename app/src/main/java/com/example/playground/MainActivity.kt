@@ -31,7 +31,7 @@ import androidx.core.text.HtmlCompat.FROM_HTML_MODE_LEGACY
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.InputStream
 import java.nio.charset.Charset
-
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +39,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // When need, use the Android Context object for manual locale lookup
+        // To see more about Configuration class switch to 03-android-core-localize-your-app-configuration-changes
+        val primaryLocale: Locale = resources.configuration.locales[0]
+        val country: String         = primaryLocale.country
+        val displayCountry: String  = primaryLocale.displayCountry
+        val displayLanguage: String = primaryLocale.displayLanguage
+        val displayScript: String   = primaryLocale.displayScript
+        val displayVariant: String  = primaryLocale.displayVariant
+        val isO3Country: String     = primaryLocale.isO3Country
+        val isO3Language: String    = primaryLocale.isO3Language
+        val language: String        = primaryLocale.language
+        val script: String          = primaryLocale.script
+        val variant: String         = primaryLocale.variant
 
         buttonLogValuesFromResource.setOnClickListener {
             logValuesFromResource()
