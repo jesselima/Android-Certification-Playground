@@ -6,13 +6,13 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 
 ### Android core
 
-✅   [Toasts](https://developer.android.com/guide/topics/ui/notifiers/toasts) 
+✅   [Toasts](https://developer.android.com/guide/topics/ui/notifiers/toasts) - [branch](https://github.com/jesselima/Android-Certification-Playground/tree/01-android-core-toasts)
 
-✅   [Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar)
+✅   [Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar) - [branch](https://github.com/jesselima/Android-Certification-Playground/tree/02-android-core-snackbar)
 
-⏩   [Localize your app](https://developer.android.com/guide/topics/resources/localization)
+✅   [Localize your app](https://developer.android.com/guide/topics/resources/localization) - [branch 1](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app) - [branch 2](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app-configuration-changes)
 
-Application fundamentals
+⏩   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch]()
 
 Create a notification
 
