@@ -9,4 +9,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    /**
+     * This branch has no code. It's about Application Fundamentals. To see the important info
+     * see the README.md file in the project root folder.
+     */
 }
