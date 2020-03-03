@@ -12,9 +12,9 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 
 ✅   [Localize your app](https://developer.android.com/guide/topics/resources/localization) - [branch 1](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app) - [branch 2](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app-configuration-changes)
 
-⏩   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch]()
+✅   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch](hhttps://github.com/jesselima/Android-Certification-Playground/tree/04-android-core-application-fundamentals)
 
-Create a notification
+⏩   [Create a notification](https://developer.android.com/training/notify-user/build-notification)
 
 AndroidX overview
 
@@ -29,3 +29,18 @@ Codelabs -> JobScheduler
 Codelabs -> WorkManager (Java)
 
 Codelabs -> WorkManager (Kotlin)
+
+#
+##### GitHub Icons
+
+:eight_spoked_asterisk:
+
+:pencil:
+
+:pushpin:
+
+:calling:
+
+:tada:
+
+:bulb:
