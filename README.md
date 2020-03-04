@@ -6,17 +6,17 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 
 ### Android core
 
-✅   [Toasts](https://developer.android.com/guide/topics/ui/notifiers/toasts) - [branch](https://github.com/jesselima/Android-Certification-Playground/tree/01-android-core-toasts)
+:heavy_check_mark::tada:___   [Toasts](https://developer.android.com/guide/topics/ui/notifiers/toasts) - [branch](https://github.com/jesselima/Android-Certification-Playground/tree/01-android-core-toasts)
 
-✅   [Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar) - [branch](https://github.com/jesselima/Android-Certification-Playground/tree/02-android-core-snackbar)
+:heavy_check_mark::tada:___   [Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar) - [branch](https://github.com/jesselima/Android-Certification-Playground/tree/02-android-core-snackbar)
 
-✅   [Localize your app](https://developer.android.com/guide/topics/resources/localization) - [branch 1](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app) - [branch 2](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app-configuration-changes)
+:heavy_check_mark::tada:___   [Localize your app](https://developer.android.com/guide/topics/resources/localization) - [branch 1](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app) - [branch 2](https://github.com/jesselima/Android-Certification-Playground/tree/03-android-core-localize-your-app-configuration-changes)
 
-✅   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch](hhttps://github.com/jesselima/Android-Certification-Playground/tree/04-android-core-application-fundamentals)
+:heavy_check_mark::tada:___   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch](hhttps://github.com/jesselima/Android-Certification-Playground/tree/04-android-core-application-fundamentals)
 
-⏩   [Create a notification](https://developer.android.com/training/notify-user/build-notification)
+:clock1:___On Hold - [Create a notification](https://developer.android.com/training/notify-user/build-notification)
 
-AndroidX overview
+:fast_forward: ___      [AndroidX overview](https://developer.android.com/jetpack/androidx)
 
 Getting started with Jetpack
 
