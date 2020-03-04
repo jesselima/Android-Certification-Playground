@@ -14,10 +14,11 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 
 :heavy_check_mark::tada:___   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch](hhttps://github.com/jesselima/Android-Certification-Playground/tree/04-android-core-application-fundamentals)
 
-:clock1:___On Hold - [Create a notification](https://developer.android.com/training/notify-user/build-notification)
+:clock1:______On Hold -       [Create a notification](https://developer.android.com/training/notify-user/build-notification)
 
-:fast_forward: ___      [AndroidX overview](https://developer.android.com/jetpack/androidx)
+:fast_forward: ______         [AndroidX overview](https://developer.android.com/jetpack/androidx)
 
+######
 Getting started with Jetpack
 
 Android KTX (Kotlin)
