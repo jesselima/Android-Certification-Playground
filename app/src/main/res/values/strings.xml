@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android Certification Playground</string>
+    <string name="show_notification_one">Show Notification One</string>
+    <string name="show_notification_two">Show Notification Two</string>
+    <string name="remove_notification_one">Remove Notification One</string>
+    <string name="update_notification_one">Update Notification One</string>
+    <string name="remove_all_notification">Remove All Notifications</string>
+    <string name="activity_title_notifications">Notifications Activity</string>
+    <string name="notification_screen_message">Great! You have launched this activity from a notification. Awesome!</string>
 </resources>

@@ -15,6 +15,7 @@ ongoing ⏩ ----- review 🔁 ----- done ✅ ----- stopped ❌ ----- warning❗-
 ✅   [Application fundamentals](https://developer.android.com/guide/components/fundamentals) - [branch](hhttps://github.com/jesselima/Android-Certification-Playground/tree/04-android-core-application-fundamentals)
 
 ⏩   [Create a notification](https://developer.android.com/training/notify-user/build-notification)
+⏩   [Notification Overview](https://developer.android.com/guide/topics/ui/notifiers/notifications)
 
 AndroidX overview
 
