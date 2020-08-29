@@ -7,4 +7,6 @@
     <string name="remove_all_notification">Remove All Notifications</string>
     <string name="activity_title_notifications">Notifications Activity</string>
     <string name="notification_screen_message">Great! You have launched this activity from a notification. Awesome!</string>
+    <string name="go_to_activity_with_extensions">Go To Activity With Extensions</string>
+    <string name="go_to_activity_main">Go To Main Activity</string>
 </resources>

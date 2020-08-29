@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
          * corresponds to the notification. To do so, you must specify a content intent defined
          * with a PendingIntent object and pass it to setContentIntent().
          */
-        val intent = Intent(this, NotificationsActivity::class.java).apply {
+        val intent = Intent(this, NotificationsSampleTargetActivity::class.java).apply {
             /**
              * The setFlags() method shown above helps preserve the user's expected navigation
              * experience after they open your app via the notification. But whether you want to
@@ -157,6 +157,10 @@ class MainActivity : AppCompatActivity() {
                 /** Removes all of the notifications you previously issued. */
                 cancelAll()
             }
+        }
+
+        buttonGoToActivityWithExtensions.setOnClickListener {
+            startActivity(Intent(this, NotificationWithExtensionsActivity::class.java))
         }
     }
 

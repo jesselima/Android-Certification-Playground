@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonShowNotificationOne"
+        android:id="@+id/buttonShowNotificationOneUsingExtensions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -17,17 +17,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonShowNotificationTwo"
+        android:id="@+id/buttonShowNotificationTwoUsingExtensions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/show_notification_two"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonShowNotificationOne" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowNotificationOneUsingExtensions" />
 
     <Button
-        android:id="@+id/buttonUpdateNotificationOne"
+        android:id="@+id/buttonUpdateNotificationOneUsingExtensions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -37,36 +37,36 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonShowNotificationTwo" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowNotificationTwoUsingExtensions" />
 
     <Button
-        android:id="@+id/buttonRemoveNotificationOne"
+        android:id="@+id/buttonRemoveNotificationOneUsingExtensions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/remove_notification_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonUpdateNotificationOne" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdateNotificationOneUsingExtensions" />
 
     <Button
-        android:id="@+id/buttonRemoveAllNotifications"
+        android:id="@+id/buttonRemoveAllNotificationsUsingExtensions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/remove_all_notification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveNotificationOne" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveNotificationOneUsingExtensions" />
 
     <Button
-        android:id="@+id/buttonGoToActivityWithExtensions"
+        android:id="@+id/buttonMainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/go_to_activity_with_extensions"
+        android:text="@string/go_to_activity_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveAllNotifications" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveAllNotificationsUsingExtensions" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
